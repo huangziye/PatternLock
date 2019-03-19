@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <com.hzy.lock.PatternLockView
+            android:id="@+id/mPatternLockView"
+            android:layout_width="280dp"
+            android:layout_height="280dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            app:aspectRatio="square"
+            app:aspectRatioEnabled="true"
+            app:dotAnimationDuration="150"
+            app:dotCount="3"
+            app:dotNormalSize="10dp"
+            app:dotSelectedSize="24dp"
+            app:normalStateColor="@color/colorPrimary"
+            app:correctStateColor="@color/colorPrimary"
+            app:wrongStateColor="@color/pomegranate"
+            app:pathEndAnimationDuration="100"
+            app:pathWidth="3dp"/>
+
+</LinearLayout>
