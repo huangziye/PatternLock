@@ -72,7 +72,7 @@ object PatternLockUtil {
 
             val digest = messageDigest.digest()
             val bigInteger = BigInteger(1, digest)
-            String.format(null as Locale, "%0" + digest.size * 2 + "x", bigInteger).toLowerCase()
+            String.format(Locale.SIMPLIFIED_CHINESE, "%0" + digest.size * 2 + "x", bigInteger).toLowerCase()
         } catch (e: NoSuchAlgorithmException) {
             null
         } catch (e: UnsupportedEncodingException) {
@@ -94,7 +94,7 @@ object PatternLockUtil {
 
             val digest = messageDigest.digest()
             val bigInteger = BigInteger(1, digest)
-            String.format(null as Locale, "%0" + digest.size * 2 + "x", bigInteger).toLowerCase()
+            String.format(Locale.SIMPLIFIED_CHINESE, "%0" + digest.size * 2 + "x", bigInteger).toLowerCase()
         } catch (e: NoSuchAlgorithmException) {
             null
         } catch (e: UnsupportedEncodingException) {
